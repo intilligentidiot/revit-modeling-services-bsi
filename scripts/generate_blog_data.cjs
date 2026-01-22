@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const postsDir = path.join(__dirname, '../post');
+const postsDir = path.join(__dirname, '../posts');
 const outputFile = path.join(__dirname, '../blog_data.js');
 const sitemapFile = path.join(__dirname, '../sitemap.xml');
 const SITE_URL = 'https://bimservicesindia.com'; // Updated URL placeholder
