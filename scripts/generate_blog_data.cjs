@@ -64,11 +64,12 @@ try {
         // Sort by date descending (newest first)
         .sort((a, b) => new Date(b.isoDate) - new Date(a.isoDate));
 
-    // Output as a JavaScript file with a global variable
-    const jsContent = `window.blogPosts = ${JSON.stringify(posts, null, 2)};`;
+    // Output as a JSON file
+    const outputJsonFile = path.join(__dirname, '../blog.json');
+    const jsonContent = JSON.stringify(posts, null, 2);
 
-    fs.writeFileSync(outputFile, jsContent);
-    console.log(`Successfully generated blog index (JS) with ${posts.length} posts.`);
+    fs.writeFileSync(outputJsonFile, jsonContent);
+    console.log(`Successfully generated blog index (JSON) with ${posts.length} posts.`);
 
     // --- Generate Sitemap ---
     const staticPages = [

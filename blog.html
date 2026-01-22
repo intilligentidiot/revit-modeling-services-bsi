@@ -181,24 +181,41 @@
             `;
         }
 
+    </script>
+    <script src="scripts/Pagination.js"></script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
-            if (window.blogPosts && window.blogPosts.length > 0) {
-                const pagination = new Pagination({
-                    items: window.blogPosts,
-                    itemsPerPage: 6,
-                    renderItem: renderBlogCard,
-                    listContainer: document.getElementById('blog-grid'),
-                    controlsContainer: document.getElementById('pagination-controls')
+            // Fetch blog data from JSON
+            fetch('blog.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("HTTP error " + response.status);
+                    }
+                    return response.json();
+                })
+                .then(posts => {
+                    window.blogPosts = posts; // Set global variable compatibility
+
+                    if (window.blogPosts && window.blogPosts.length > 0) {
+                        const pagination = new Pagination({
+                            items: window.blogPosts,
+                            itemsPerPage: 6,
+                            renderItem: renderBlogCard,
+                            listContainer: document.getElementById('blog-grid'),
+                            controlsContainer: document.getElementById('pagination-controls')
+                        });
+                        pagination.init();
+                        lucide.createIcons();
+                    } else {
+                        document.getElementById('blog-grid').innerHTML = '<p class="col-span-3 text-center text-gray-500">No blog posts found.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading blog posts:', error);
+                    document.getElementById('blog-grid').innerHTML = '<p class="col-span-3 text-center text-gray-500">Error loading blog posts. Please try again later.</p>';
                 });
-                pagination.init();
-                lucide.createIcons(); // Re-init icons for new content
-            } else {
-                document.getElementById('blog-grid').innerHTML = '<p class="col-span-3 text-center text-gray-500">No blog posts found.</p>';
-            }
         });
     </script>
-    <script src="blog_data.js"></script>
-    <script src="scripts/Pagination.js"></script>
 </body>
 
 </html>
