@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | BIM Services India</title>
+    <meta name="description"
+        content="Latest insights, updates, and news from the world of BIM, Revit Modeling, and AEC technology.">
+    <meta name="description"
+        content="Latest insights, updates, and news from the world of BIM, Revit Modeling, and AEC technology.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog | BIM Services India">
+    <meta property="og:description"
+        content="Latest insights, updates, and news from the world of BIM and Revit Modeling.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Blog | BIM Services India">
+    <meta property="twitter:description"
+        content="Latest insights, updates, and news from the world of BIM and Revit Modeling.">
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        :root {
+            --brand-blue: #0056b3;
+            --brand-dark: #1a202c;
+            --brand-light: #f7fafc;
+            --brand-accent: #f97316;
+        }
+
+        .text-brand-blue {
+            color: var(--brand-blue);
+        }
+
+        .bg-brand-blue {
+            background-color: var(--brand-blue);
+        }
+
+        .hover-bg-brand-blue:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                        <i data-lucide="building-2" class="h-8 w-8 text-brand-blue"></i>
+                        <span class="font-bold text-2xl text-gray-900">BIM <span class="text-brand-blue">Services
+                                India</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-brand-blue font-medium transition">Home</a>
+                    <a href="blog.html" class="text-brand-blue font-bold transition">Blog</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+                        class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-brand-blue font-medium">Home</a>
+                <a href="blog.html" class="block px-3 py-2 text-brand-blue font-bold">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-20">
+        <!-- Blog Header -->
+        <div class="bg-brand-blue py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold text-white sm:text-5xl">Our Blog</h1>
+                <p class="mt-4 text-xl text-blue-100">Insights, updates, and news from the world of BIM.</p>
+            </div>
+        </div>
+
+        <!-- Blog Grid -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div id="blog-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Blog posts will be dynamically inserted here -->
+                </div>
+                <!-- Pagination Controls -->
+                <div id="pagination-controls"></div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Call to Action / Footer -->
+    <footer id="contact" class="bg-gray-900 text-white">
+        <!-- CTA Banner -->
+
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <i data-lucide="building-2" class="h-6 w-6 text-blue-400"></i>
+                    <span class="font-bold text-xl">BIM Services India</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Providing end-to-end 3D BIM modeling services for architectural, structural, and MEP disciplines
+                    globally.
+                </p>
+            </div>
+
+
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Contact</h3>
+                <ul class="space-y-4">
+                    <li class="text-gray-300">
+                        <div class="flex items-center gap-2 font-bold text-white mb-1">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> USA
+                        </div>
+                        <p class="pl-6 text-sm leading-relaxed">7044, S Fultondale Circle<br>Aurora Co, 80016. Colorado
+                        </p>
+                        <p class="pl-6 text-sm flex items-center gap-2 mt-1 hover:text-white transition"><i
+                                data-lucide="phone" class="w-3 h-3"></i> +1 510 680 3390</p>
+                    </li>
+                    <li class="text-gray-300">
+                        <div class="flex items-center gap-2 font-bold text-white mb-1">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> India
+                        </div>
+                        <p class="pl-6 text-sm leading-relaxed">807, Indraprasth Corporate<br>Anand Nagar Road,
+                            Prahladnagar<br>Ahmedabad 13 Gujarat, India</p>
+                        <p class="pl-6 text-sm flex items-center gap-2 mt-1 hover:text-white transition"><i
+                                data-lucide="phone" class="w-3 h-3"></i> +91 79 4800 4669</p>
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-300 mt-2 hover:text-white transition">
+                        <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i> info@bimservicesindia.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 py-8 text-center text-sm text-gray-400">
+            &copy; 2024 BIM Services India. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Render Blog Post Card Helper
+        function renderBlogCard(post) {
+            return `
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+                    <img src="${post.image}" alt="${post.title}" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="text-sm text-brand-blue font-semibold mb-2">${post.tags && post.tags.length ? post.tags[0] : 'Blog'}</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 line-clamp-2">${post.title}</h3>
+                        <p class="text-gray-500 mb-4 flex-1 line-clamp-3">${post.description}</p>
+                        <a href="${post.url}" class="inline-flex items-center text-brand-blue font-medium hover:underline mt-auto">Read Article <i data-lucide="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.blogPosts && window.blogPosts.length > 0) {
+                const pagination = new Pagination({
+                    items: window.blogPosts,
+                    itemsPerPage: 6,
+                    renderItem: renderBlogCard,
+                    listContainer: document.getElementById('blog-grid'),
+                    controlsContainer: document.getElementById('pagination-controls')
+                });
+                pagination.init();
+                lucide.createIcons(); // Re-init icons for new content
+            } else {
+                document.getElementById('blog-grid').innerHTML = '<p class="col-span-3 text-center text-gray-500">No blog posts found.</p>';
+            }
+        });
+    </script>
+    <script src="blog_data.js"></script>
+    <script src="scripts/Pagination.js"></script>
+</body>
+
+</html>

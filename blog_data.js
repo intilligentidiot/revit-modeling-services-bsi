@@ -1,0 +1,14 @@
+window.blogPosts = [
+  {
+    "filename": "The-Digital-Backbone.html",
+    "url": "post/The-Digital-Backbone.html",
+    "title": "The Digital Backbone",
+    "description": "Explore how professional Revit Modeling Services act as the digital backbone for modern construction, turning complex data into streamlined, constructible reality.",
+    "date": "2026-01-22",
+    "isoDate": "2026-01-22T13:25:41.241Z",
+    "tags": [
+      "Technology"
+    ],
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+  }
+];
