@@ -1,5 +1,13 @@
 [
   {
+    "id": 2,
+    "link": "posts/undefined",
+    "image": "images/default.jpg",
+    "date": "January 29, 2026",
+    "excerpt": "Click to read more about undefined",
+    "category": "Technology"
+  },
+  {
     "filename": "The-Digital-Backbone.html",
     "url": "posts/The-Digital-Backbone.html",
     "title": "The Digital Backbone",
